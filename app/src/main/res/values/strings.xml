@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">냉장고를 부탁해</string>
+
+    <!--    디자인할때 표시할 디폴트 글자    -->
+    <string name="default_text">-</string>
+
+    <!--    Activity    -->
+    <string name="activity_title_main">냉장고를 부탁해</string>
+    <string name="activity_title_food_add">식품 추가</string>
+    <string name="activity_title_profile_edit">회원정보 수정</string>
+    <string name="activity_title_history">내역</string>
+    <string name="activity_title_setting">설정</string>
+
+    <!--    Menu    -->
+    <string name="menu_calendar">달력</string>
+    <string name="menu_history">내역</string>
+    <string name="menu_setting">설정</string>
+    <string name="menu_plus">추가</string>
+
+    <!--    Message    -->
+    <string name="msg_back_press_end">\'뒤로\' 버튼을 한번 더 누르면 종료됩니다.</string>
+    <string name="msg_user_id_check_empty">아이디를 입력하세요.</string>
+    <string name="msg_user_id_check_length">아이디를 6자리 이상 입력하세요.</string>
+    <string name="msg_password_check_empty">비밀번호를 입력하세요.</string>
+    <string name="msg_password_check_length">비밀번호를 6자리 이상 입력하세요.</string>
+    <string name="msg_password_check_confirm">비밀번호를 확인하세요.</string>
+    <string name="msg_user_name_check_empty">이름을 입력하세요.</string>
+    <string name="msg_phone_number_check_empty">휴대번호를 입력하세요.</string>
+    <string name="msg_phone_number_check_wrong">휴대번호 형식이 올바르지 않습니다.</string>
+    <string name="msg_email_check_empty">이메일을 입력하세요.</string>
+    <string name="msg_email_check_wrong">이메일 형식이 올바르지 않습니다.</string>
+    <string name="msg_user_id_check_overlap">동일한 아이디가 존재합니다.</string>
+    <string name="msg_login_user_none">등록된 회원이 없습니다.</string>
+    <string name="msg_login_password_wrong">비밀번호가 틀립니다.</string>
+    <string name="msg_find_failure">등록된 회원이 없습니다.</string>
+    <string name="msg_password_check_failure">현재 비밀번호가 틀립니다.</string>
+    <string name="msg_password_modify_complete">비밀번호가 변경되었습니다.</string>
+    <string name="msg_account_withdrawal">회원님은 탈퇴하였습니다.</string>
+    <string name="msg_code_check_empty">코드를 입력하세요.</string>
+    <string name="msg_info_update">정보가 수정되었습니다.</string>
+    <string name="msg_food_empty">식품이 없습니다.</string>
+    <string name="msg_expiration_date_expired">유통기한이 지났습니다.</string>
+    <string name="msg_food_check_overlap">동일한 식품이 존재합니다.</string>
+    <string name="msg_food_add_complete">식품이 추가되었습니다.</string>
+    <string name="msg_qr_code_scan_failure">QR 코드 인식을 실패하였습니다.</string>
+    <string name="msg_error">일시적인 장애가 발생했습니다.</string>
+
+    <!--    Dialog    -->
+    <string name="dialog_title_logout">로그아웃</string>
+    <string name="dialog_title_food_delete">식품 삭제</string>
+    <string name="dialog_title_withdrawal">회원탈퇴</string>
+    <string name="dialog_msg_logout">로그아웃 하시겠습니까?</string>
+    <string name="dialog_msg_food_delete">식품을 삭제하시겠습니까?</string>
+    <string name="dialog_msg_withdrawal">회원탈퇴 하시겠습니까?</string>
+    <string name="dialog_ok">확인</string>
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_allow">수락</string>
+    <string name="dialog_deny">거부</string>
+
+    <string name="permission_rationale_app_use">앱을 이용하기 위해 권한이 필요합니다.</string>
+</resources>

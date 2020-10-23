@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.example.refrigerator"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+
+    // 머터리얼 디자인 관련 라이브러리
+    implementation 'com.google.android.material:material:1.2.1'
+
+    // 파이어베이스 관ㅏ련 라이브러리 (파이어스토어(DB))
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.firebase:firebase-firestore:21.6.0'
+
+    // QR 코드 리더 라이브러리
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+
+    // 권한 설정 라이브러리
+    implementation('com.github.hotchemi:permissionsdispatcher:3.0.1') {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: 'support-v13'
+    }
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.0.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+// 주석 다신것만 수정하신것
+
+apply plugin: 'com.google.gms.google-services'

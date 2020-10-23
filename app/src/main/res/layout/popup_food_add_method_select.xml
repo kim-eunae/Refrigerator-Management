@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBlock"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="48dp"
+    android:paddingEnd="48dp"
+    android:gravity="center"
+    android:background="@color/popup_transparent">
+
+    <LinearLayout
+        android:id="@+id/layBody"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/layout_big_round_no_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="메뉴"
+            />
+
+        <LinearLayout
+            android:id="@+id/layQRCode"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="QR코드로 촬영하기"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layCode"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="코드 직접 입력하기"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

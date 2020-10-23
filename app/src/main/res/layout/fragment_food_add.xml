@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:gravity="center_horizontal"
+        android:background="@color/color_primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="선택한 식품"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="식품이 맞는지 확인해 주시고\n맞으시면 추가를 눌려주세요."
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="184dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="36dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/layout_xbig_round_no_border">
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/default_text"
+            />
+
+        <TextView
+            android:id="@+id/txtFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="@string/default_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/sub_text_color"
+            android:text="유통기한"
+            />
+
+        <TextView
+            android:id="@+id/txtExpirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="@string/default_text"
+            />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="추가"
+            android:stateListAnimator="@null"
+            android:background="@drawable/button_normal_selector"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textSize="13sp"
+                android:text="QR코드로 촬영하기"
+                style="@style/AppTheme.Button.Borderless"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="13sp"
+                android:text="|"
+                />
+
+            <Button
+                android:id="@+id/btnCode"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:textSize="13sp"
+                android:text="코드 직접 입력하기"
+                style="@style/AppTheme.Button.Borderless"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layLoading"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/popup_transparent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</FrameLayout>

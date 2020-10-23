@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "167664751705",
+    "firebase_url": "https://refrigerator-513c6.firebaseio.com",
+    "project_id": "refrigerator-513c6",
+    "storage_bucket": "refrigerator-513c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167664751705:android:f7aaff24a8087a5c8a8d48",
+        "android_client_info": {
+          "package_name": "com.example.refrigerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167664751705-2pst3dgcemhd3t0pqtafhg9ird5u27aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxQv9YAF4GMoV8vP3qQqJOK8cVmm31Cdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167664751705-2pst3dgcemhd3t0pqtafhg9ird5u27aq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
